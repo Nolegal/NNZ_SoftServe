@@ -1,0 +1,470 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="stylesheet" href="styles.css" type="text/CSS"/>
+	
+	<script src="https://kit.fontawesome.com/f2efd8b41a.js" crossorigin="anonymous"></script>
+
+   
+
+   
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.9.3/Chart.js"></script>
+	<title>NNZ est.</title>
+</head>
+<body>
+	<header class="header header--fixed">
+ 	<div class="container">
+ 		<div class="header__inner">
+ 			
+             <div class="header__logo">NNZ</div>
+             <nav class="nav" id="nav">
+             	    <a class="nav__link linka" href="">About us</a>
+                <a class="nav__link linkst" href="">Stock Exchange</a>
+             		<a class="nav__link linkbet" href="">BET</a>
+             		<a class="nav__link linksh" href="">SHOP</a>
+             		<a class="nav__link linkon" href="">CONTACTS</a>	
+                    <button class="nav__link " id="loginlink"href=""
+                    onclick="show('block')">Login</button>
+                    
+             </nav>
+            
+            <button class="nav-toggle" id="nav_toggle" type="button">
+                   <span class="nav-toggle__item"> Menu</span>
+                 </button>
+                 
+ 		 </div>
+ 	</div>
+ </header>
+
+ 
+<div class="main" >
+	<div class="container">
+		<div class="main__inner">
+			 <form id="formElem" class="login">
+    <div class="row">
+      
+
+      
+
+      <div class="col">
+        
+
+        <input id="name1" type="text" name="name" placeholder="Name" required>
+        <input id="password" type="password" name="password" placeholder="Password" required>
+        <input type="submit" value="Login">
+      </div>
+
+    </div>
+  </form>
+			<h3 class="main__inner__title">NNZ est.</h3>
+		</div>
+		<div class="main__data">
+			<img  class="data__show" width="400" height="250"src="img/02.png" alt="">
+			<img src="img/Bet La Liga.png " width="500" alt="">
+		</div>
+	</div>
+	
+	
+</div>
+
+<section class="section about"  id="about">
+	<div class="section__header">
+            <h2 class="section__uptitle">NNZ est.</h2>
+            <h1 class="section__title">World trademark Deals</h1>
+            <div class="section__text ">
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla quam velit, vulputate eu pharetra nec, mattis ac neque. Duis vulputate commodo lectus, ac blandit elit tincidunt id. Sed rhoncus, tortor sed eleifend tristique, tortor mauris molestie elit, et lacinia ipsum quam nec dui. Quisque nec mauris sit amet elit iaculis pretium sit amet quis magna. Aenean velit odio, elementum in tempus ut, vehicula eu diam. Pellentesque rhoncus aliquam mattis. Ut vulputate eros sed felis sodales nec vulputate justo hendrerit. Vivamus varius pretium ligula, a aliquam odio euismod sit amet. Quisque laoreet sem sit amet orci ullamcorper at ultricies metus viverra. Pellentesque arcu mauris, malesuada quis ornare accumsan, blandit sed diam...Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla quam velit, vulputate eu pharetra nec, mattis ac neque. Duis vulputate commodo lectus, ac blandit elit tincidunt id. Sed rhoncus, tortor sed eleifend tristique, tortor mauris molestie elit, et lacinia ipsum quam nec dui. Quisque nec mauris sit amet elit iaculis pretium sit amet quis magna. Aenean velit odio, elementum in tempus ut, vehicula eu diam. Pellentesque rhoncus aliquam mattis. Ut vulputate eros sed felis sodales nec vulputate justo hendrerit. Vivamus varius pretium ligula, a aliquam odio euismod sit amet. Quisque laoreet sem sit amet orci ullamcorper at ultricies metus viverra. Pellentesque arcu mauris, malesuada quis ornare accumsan, blandit sed diam...Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla quam velit, vulputate eu pharetra nec, mattis ac neque. Duis vulputate commodo lectus, ac blandit elit tincidunt id. Sed rhoncus, tortor sed eleifend tristique, tortor mauris molestie elit, et lacinia ipsum quam nec dui. Quisque nec mauris sit amet elit iaculis pretium sit amet quis magna. Aenean velit odio, elementum in tempus ut, vehicula eu diam. Pellentesque rhoncus aliquam mattis. Ut vulputate eros sed felis sodales nec vulputate justo hendrerit. Vivamus varius pretium ligula, a aliquam odio euismod sit amet. Quisque laoreet sem sit amet orci ullamcorper at ultricies metus viverra. Pellentesque arcu mauris, malesuada quis ornare accumsan, blandit sed diam...</p>
+            </div>
+        </div>
+
+</section>
+
+
+
+
+<section class="section stock_ex" id="stock">
+	<div class="section__header">
+         <h2 class="section__uptitle">Stock Exchange</h2>
+            
+            
+        </div>
+      <div class="stock">
+      	<div class="stock_data">
+      		<!-- <img src="img/01.png"width="435" height="292" alt="" class="stock__data__img"> -->
+      		<div class="stock_data_name">GBP to USD Chart</div>
+      		<div class="ct-chart1">
+      			<canvas id="myChart" width="435" height="292"></canvas>
+      		</div>
+      	</div>
+      	<div class="stock_data">
+      		<!-- <img src="img/02.png"width="435" height="292" alt="" class="stock__data__img"> -->
+      		<div class="stock_data_name">XBT to USD Chart</div>
+      		
+                <div class="ct-chart1">
+      			<canvas id="myChart2" width="435" height="292"></canvas>
+      		</div>
+             
+      	</div>
+      	<div class="stock_data">
+      		<!-- <img src="img/03.png"width="435" height="292" alt="" class="stock__data__img"> -->
+
+      		<div class="stock_data_name">EUR to CHF Chart</div>
+      		<div class="ct-chart1">
+      			<canvas id="myChart3" width="435" height="292"></canvas>
+      		</div>
+      	</div>
+      	<div class="stock_data">
+      		<!-- <img src="img/04.png"width="435" height="292" alt="" class="stock__data__img"> -->
+             <div class="stock_data_name">XBT to XAU Chart</div>
+      		<div class="ct-chart1">
+      			<canvas id="myChart4" width="435" height="292"></canvas>
+      		</div>
+      	</div>
+      	  
+      	  
+      	  
+      	  
+      	
+      </div>
+</section>
+
+<section class="section bets" id="bet">
+	 <div class="section__header">
+         <h2 class="section__uptitle">BET NNZ</h2>
+            
+            
+     </div>
+
+
+<div class="sports">
+	 <div class="table2">
+        	<table class="england" border ="1">
+      		<tr>
+			<td>Pos</td>
+			<td>Team</td>
+			<td>Pld</td>
+			<td>W</td>
+			<td>D</td>
+			<td>L</td>
+			<td>GF</td>
+			<td>GA</td>
+			<td>GD</td>
+			<td>Pts</td>
+		</tr>
+		
+		<tr>
+			<td>1</td>
+			<td>Liverpool</td>
+			<td>25</td>
+			<td>24</td>
+			<td>1</td>
+			<td>0</td>
+			<td>60</td>
+			<td>15</td>
+			<td>+45</td>
+			<td>73</td>
+		</tr>
+        
+        <tr>
+			<td>2</td>
+			<td>Manchester City</td>
+			<td>25</td>
+			<td>16</td>
+			<td>3</td>
+			<td>6</td>
+			<td>65</td>
+			<td>29</td>
+			<td>+36</td>
+			<td>51</td>
+		</tr>
+
+		<tr>
+			<td>3</td>
+			<td>Leicester City</td>
+			<td>25</td>
+			<td>15</td>
+			<td>4</td>
+			<td>6</td>
+			<td>54</td>
+			<td>26</td>
+			<td>+28</td>
+			<td>49</td>
+		</tr>
+
+		<tr>
+			<td>4</td>
+			<td>Chelsea</td>
+			<td>25</td>
+			<td>12</td>
+			<td>5</td>
+			<td>8</td>
+			<td>43</td>
+			<td>34</td>
+			<td>+9</td>
+			<td>41</td>
+		</tr>
+
+		<tr>
+			<td>5</td>
+			<td>Tottenham Hotspur</td>
+			<td>25</td>
+			<td>10</td>
+			<td>7</td>
+			<td>8</td>
+			<td>40</td>
+			<td>32</td>
+			<td>+8</td>
+			<td>37</td>
+		</tr>
+<table class="england_bet"border ="1">
+	
+	<tr>
+		<td colspan= "11" class="table_name">PREMIER LEGUE BET</td>
+		
+
+	</tr>
+	<tr>
+		<td>#</td>
+		<td>Date</td>
+		<td >Event</td>
+		<td>Hand.</td>
+		<td>Odds</td>
+		<td>Total</td>
+		<td>Over</td>
+		<td>Under</td>
+		<td>1</td>
+		<td>X</td>
+		<td>2</td>
+	</tr>
+
+	<tr>
+		<td>8636</td>
+		<td >08/02 14:30</td>
+		<td rowspan="2" width="100px">Everton
+			Crystal Palace</td>
+		<td width="10px">-1.0 +1.0</td>
+		<td class="blue" width="10px">2.18 1.68</td>
+		<td>2.5</td>
+		<td class="blue">2.10</td>
+		<td class="blue">1.74</td>
+		<td class="blue">1.66</td>
+		<td class="blue">3.60</td>
+		<td class="blue">5.90</td>
+	</tr>
+</table>
+      	</table>
+        </div>
+      <div class="table2" >
+      	
+      	<table class="Spain" border ="1">
+      		<tr>
+			<td>Pos</td>
+			<td>Team</td>
+			<td>Pld</td>
+			<td>W</td>
+			<td>D</td>
+			<td>L</td>
+			<td>GF</td>
+			<td>GA</td>
+			<td>GD</td>
+			<td>Pts</td>
+		</tr>
+		
+		<tr>
+			<td>1</td>
+			<td>Real Madrid</td>
+			<td>22</td>
+			<td>14</td>
+			<td>7</td>
+			<td>1</td>
+			<td>40</td>
+			<td>13</td>
+			<td>+27</td>
+			<td>49</td>
+		</tr>
+        
+        <tr>
+			<td>2</td>
+			<td>Barcelona</td>
+			<td>22</td>
+			<td>14</td>
+			<td>4</td>
+			<td>4</td>
+			<td>52</td>
+			<td>26</td>
+			<td>+26</td>
+			<td>46</td>
+		</tr>
+
+		<tr>
+			<td>3</td>
+			<td>Getafe</td>
+			<td>22</td>
+			<td>11</td>
+			<td>6</td>
+			<td>5</td>
+			<td>32</td>
+			<td>20</td>
+			<td>+12</td>
+			<td>39</td>
+		</tr>
+
+		<tr>
+			<td>4</td>
+			<td>Sevilla</td>
+			<td>22</td>
+			<td>11</td>
+			<td>6</td>
+			<td>5</td>
+			<td>28</td>
+			<td>21</td>
+			<td>+7</td>
+			<td>39</td>
+		</tr>
+
+		<tr>
+			<td>5</td>
+			<td>Valencia</td>
+			<td>22</td>
+			<td>10</td>
+			<td>7</td>
+			<td>5</td>
+			<td>33</td>
+			<td>29</td>
+			<td>+4</td>
+			<td>37</td>
+		</tr>
+
+      	</table>
+
+<table class="england_bet"border ="1">
+	
+	<tr>
+		<td colspan= "11" class="table_name">PIMERA LA LIGA BET</td>
+		
+
+	</tr>
+	<tr>
+		<td>#</td>
+		<td>Date</td>
+		<td>Event</td>
+		<td>Hand.</td>
+		<td>Odds</td>
+		<td>Total</td>
+		<td>Over</td>
+		<td>Under</td>
+		<td>1</td>
+		<td>X</td>
+		<td>2</td>
+	</tr>
+
+	<tr>
+		<td>7717</td>
+		<td>07/02 22:00</td>
+		<td width="10px">   Alaves
+			Eibar     </td>
+		<td width="10px">0.00 0.00</td>
+		<td  class="blue" width="10px">1.73 2.18</td>
+
+		<td>2.0</td>
+		<td class="blue">1.78</td>
+		<td class="blue">2.10</td>
+		<td class="blue">2.50</td>
+		<td class="blue">3.15</td>
+		<td class="blue">3.90</td>
+	</tr>
+</table>
+
+      </div>
+</div>
+
+       
+</section>
+
+<section class="section shop" id="shop">
+	<div class="section__header">
+            <h2 class="section__uptitle">SHOP</h2>
+    </div>
+          <div class="goods">
+          	<div class="goods__var">
+          		<figure class="goods__items">
+          		<figcaption>+CARS</figcaption>
+          		<img src="img/TESLA CAR.jpg"  alt="">
+          	</figure>
+          	</div>
+          	<div class="goods__var">
+          		<figure class="goods__items">
+          		<figcaption>+GADJETS</figcaption>
+          		<img src="img/gadgets.jpg" alt="">
+          	</figure>
+          	</div>
+          	<div class="goods__var">
+          		<figure class="goods__items">
+          		<figcaption>+ALCOHOL</figcaption>
+          		<img src="img/buhlo.jpg" alt="">
+          	</figure>
+          	</div>
+          	<div class="goods__var">
+          		<figure class="goods__items">
+          		<figcaption>+PARFUMES</figcaption>
+          		<img src="img/Mens Parfumes.jpg" width="292px" height="172" alt="">
+          	</figure>
+          	</div>
+          	
+          	
+          	
+          	
+          </div>
+
+            
+       
+
+</section>
+
+<section class="section">
+	<div class="section__header">
+            <h2 class="section__uptitle" id="contact">Contacts</h2>
+            
+            <div class="section__text">
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla quam velit, vulputate eu pharetra nec, mattis ac neque. Duis vulputate commodo lectus, ac blandit elit tincidunt id. 
+                </p>
+            </div>
+        </div>
+
+</section>
+
+
+<section class="section callback">
+	<div class="section__header">
+            <h2 class="section__uptitle">Support</h2>
+            
+            
+        </div>
+        <div class="callback__inner">
+        	
+        	<form class="mail">
+        	<i class="far fa-comment-dots"></i>
+          <input type="email"  placeholder="e-mail" >
+           
+        </form>
+
+
+	<form  class="message" >
+        	
+          <input type="text"  placeholder="Write here..." height="250px" style="min-width:400px;">
+           
+        </form>
+
+        
+<button class= "subscribe__btn"type="submit" >to send it</button>
+        </div>
+        
+</section>
+
+
+
+
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+  <script src="app.js"></script>
+</body>
+</html>
